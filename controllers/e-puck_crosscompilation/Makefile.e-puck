@@ -1,0 +1,11 @@
+#
+# Standard Makefile for a Webots controller
+#
+# Author: Olivier.Michel@cyberbotics.com
+# Date:   August 29th, 2006.
+#
+
+space :=
+space +=
+WEBOTS_HOME_PATH=$(subst $(space),\ ,$(strip $(subst \,/,$(WEBOTS_HOME))))
+include $(WEBOTS_HOME_PATH)/transfer/e-puck/libepuck/Makefile.include
